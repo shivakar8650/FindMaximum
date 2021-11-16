@@ -9,23 +9,17 @@ namespace FindMaxUsingGeneric
         public void FindMax(string a, string b, string c)
         {
 
-            if( (a.CompareTo(b)>0) && (a.CompareTo(c)>0)||
-                (a.CompareTo(b) >=0) && (a.CompareTo(c) > 0)||
-                (a.CompareTo(b) > 0) && (a.CompareTo(c) >=0))    
+           if( (a.CompareTo(b)>0) && (a.CompareTo(c)>0)) 
             {
                 Console.WriteLine(a + " is maximum");
 
             }
-            if ((b.CompareTo(c) > 0) && (b.CompareTo(a) > 0) ||
-                (b.CompareTo(c) >=0) && (b.CompareTo(a) > 0) ||
-                (b.CompareTo(c) > 0) && (b.CompareTo(a) >=0) )
+            else if ((b.CompareTo(c) > 0) && (b.CompareTo(a) > 0))
             {
                 Console.WriteLine(b + " is maximum");
 
             }
-            if ((c.CompareTo(a) > 0) && (c.CompareTo(b) > 0) ||
-                (c.CompareTo(a) >=0) && (c.CompareTo(b) > 0) ||
-                (c.CompareTo(a) > 0) && (c.CompareTo(b) >=0) )
+            else if ((c.CompareTo(a) > 0) && (c.CompareTo(b) > 0))
             {
                 Console.WriteLine(c + " is maximum");
             }
